@@ -1,0 +1,193 @@
+/* Variable */
+:root {
+	--basic-text: #283136;
+	--default-black: #000;
+	--default-white: #fff;
+
+	/* red */
+	--basic-accent: #fb565a;
+	--hover-accent: #d7373b;
+	--press-accent: #d7373b;
+
+	/* gray */
+	--background-special: #eee;
+
+	--basic-decor: rgba(77, 77, 77, 0.12);
+	--action-decor: #4d4d4d;
+
+	--basic-social: #e1e1e1;
+
+	/* form */
+	--hover-form-btn: #dfdfdf;
+	--press-form-btn: #d5d5d5;
+	--basic-form-border: #d7dcde;
+	--hover-form-border: #b4b9bb;
+	--basic-form-text: rgba(68, 68, 68, 0.5);
+	--focus-form-text: rgba(68, 68, 68);
+	--invalid_value-form: #e74246;
+
+	/* services btn */
+	--basic-content_app: #00ca74;
+	--hover-content_app: #00bc6c;
+	--press-content_app: #00aa62;
+	--basic-content_present: #efc849;
+	--hover-content_present: #eab534;
+	--press-content_present: #e5a722;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+	cursor: pointer;
+	display: inline-block;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	color: var(--basic-text);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.display-none {
+	display: none;
+}
+
+.main-header {
+	background: var(--background-special);
+}
+
+.site-nav {
+	list-style: none;
+}
+
+.site-nav-item {
+	color: var(--default-black);
+	font-weight: 500;
+	line-height: 30px;
+}
+
+.slider {
+	background: var(--background-special);
+}
+
+.slider-item h2 {
+	font-weight: 500;
+	font-size: 55px;
+	line-height: 55px;
+	color: var(--default-black);
+}
+
+.button {
+	padding-top: 17px;
+	padding-bottom: 15px;
+	background: var(--basic-accent);
+	color: var(--default-white);
+	text-transform: uppercase;
+	font-weight: 500;
+	line-height: 18px;
+	border-radius: 3px;
+}
+.button:hover {
+	background: var(--hover-accent);
+}
+
+.services-item-title {
+	text-transform: uppercase;
+	color: var(--default-black);
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.button-yellow {
+	background: var(--basic-content_present);
+}
+.button-yellow:hover {
+	background: var(--hover-content_present);
+}
+
+.button-green {
+	background: var(--basic-content_app);
+}
+.button-green:hover {
+	background: var(--hover-content_app);
+}
+
+.about-slogan {
+	font-weight: 500;
+	font-size: 45px;
+	line-height: 45px;
+	color: var(--default-black);
+}
+
+.about h4 {
+	font-weight: 700;
+	color: var(--default-black);
+}
+
+.about-indicators-info dt {
+	font-weight: 700;
+	font-size: 45px;
+	line-height: 64px;
+	color: var(--default-black);
+}
+.about-indicators-info dt {
+	line-height: 18px;
+}
+
+.partners-item {
+	opacity: 0.2;
+}
+
+.footer-contacts {
+	background: var(--default-white);
+}
+
+.contacts-title {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 30px;
+	color: var(--default-black);
+}
+
+.contacts-text {
+	line-height: 18px;
+}
+.contacts-phone {
+	font-family: 'Roboto', sans-serif;
+	color: var(--basic-text);
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.social-link {
+	border-radius: 50%;
+	width: 81px;
+	height: 81px;
+	background: var(--background-special);
+	position: relative;
+}
+.social-link img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.social-link:hover {
+	background: var(--hover-accent);
+}
+
+.footer-social-slogan {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 36px;
+	color: var(--default-black);
+}
+.footer-social-slogan + p {
+	line-height: 22px;
+}
