@@ -6,36 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>магазин</title>
     <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="index.html">
+    <header class="main-header">
+      <nav class="main-nav">
+        <a href="index.html" class="main-header-logo">
           <img
             src="img/icons/logo-nerds.svg"
             width="160"
             height="65"
-            alt="логотип нёрдс"
+            alt="logo nёrds"
           />
         </a>
-        <ul>
-          <li><a href="blank.html">Студия</a></li>
-          <li><a href="blank.html">Клиенты</a></li>
-          <li><a>Магазин</a></li>
-          <li><a href="blank.html">Контакты</a></li>
+        <ul class="site-nav">
+          <li><a class="site-nav-item" href="blank.html">Студия</a></li>
+          <li><a class="site-nav-item" href="blank.html">Клиенты</a></li>
+          <li>
+            <a class="site-nav-item site-nav-item--action" href="catalog.html">
+              Магазин
+            </a>
+          </li>
+          <li><a class="site-nav-item" href="blank.html">Контакты</a></li>
         </ul>
-        <a href="blank.html">Корзина</a>
+        <a class="site-nav-item main-cart" href="blank.html">Корзина</a>
       </nav>
     </header>
     <main>
-      <section>
-        <h1>Магазин готовых решений</h1>
+      <section class="sub-header">
+        <h1 class="title">Магазин готовых решений</h1>
       </section>
+
       <section>
-        <h2>фильтр</h2>
+        <h2 class="display-none">фильтр</h2>
         <form action="https://echo.htmlacademy.ru" method="post">
           <fieldset>
-            <legend>Стоимость:</legend>
+            <legend class="sub-title">Стоимость:</legend>
             <input
               type="range"
               id="price"
@@ -45,70 +52,84 @@
               step="1"
             />
             <p>
-              <label>От <input type="text" value="0" name="minprice" /></label>
-              <label
-                >До <input type="text" value="150000" name="maxprice"
-              /></label>
+              <label>
+                От
+                <input
+                  class="price-value"
+                  type="text"
+                  value="0"
+                  name="minprice"
+                />
+              </label>
+              <label>
+                До
+                <input
+                  class="price-value"
+                  type="text"
+                  value="150000"
+                  name="maxprice"
+                />
+              </label>
             </p>
           </fieldset>
           <fieldset>
-            <legend>Сетка:</legend>
-            <label
-              ><input
-                type="radio"
-                name="responsive"
-                value="adaptive"
-                checked
-              />Адаптивная</label
-            >
-            <label
-              ><input
-                type="radio"
-                name="responsive"
-                value="fixed"
-              />Фиксированная</label
-            >
-            <label
-              ><input
-                type="radio"
-                name="responsive"
-                value="rubber"
-              />Резиновая</label
-            >
+            <legend class="sub-title">Сетка:</legend>
+            <label>
+              <input type="radio" name="responsive" value="adaptive" checked />
+              Адаптивная
+            </label>
+            <label>
+              <input type="radio" name="responsive" value="fixed" />
+              Фиксированная
+            </label>
+            <label>
+              <input type="radio" name="responsive" value="rubber" />
+              Резиновая
+            </label>
           </fieldset>
           <fieldset>
-            <legend>Особенности:</legend>
-            <label
-              ><input type="checkbox" name="slider" checked />Слайдер</label
-            >
-            <label
-              ><input type="checkbox" name="advantages" />Блок
-              преимуществ</label
-            >
-            <label><input type="checkbox" name="news" checked />Новости</label>
-            <label><input type="checkbox" name="gallery" />Галерея</label>
-            <label><input type="checkbox" name="basket" />Корзина</label>
+            <legend class="sub-title">Особенности:</legend>
+            <label>
+              <input type="checkbox" name="slider" checked />
+              Слайдер
+            </label>
+            <label>
+              <input type="checkbox" name="advantages" />
+              Блок преимуществ
+            </label>
+            <label>
+              <input type="checkbox" name="news" checked />
+              Новости
+            </label>
+            <label>
+              <input type="checkbox" name="gallery" />
+              Галерея
+            </label>
+            <label>
+              <input type="checkbox" name="basket" />
+              Корзина
+            </label>
           </fieldset>
-          <input type="submit" value="показать" />
+          <input class="button button-grey" type="submit" value="показать" />
         </form>
       </section>
-      <section>
-        <h2>сортировать:</h2>
+      <section class="sort-select">
+        <h2 class="sub-title">сортировать:</h2>
         <ul>
-          <li><a href="#">по цене</a></li>
-          <li><a href="#">по типу</a></li>
-          <li><a href="#">по названию</a></li>
+          <li><a class="" href="#">по цене</a></li>
+          <li><a class="" href="#">по типу</a></li>
+          <li><a class="" href="#">по названию</a></li>
         </ul>
         <ul>
           <li>
-            <a href="#"
-              ><img src="img/icons/arrow-down.svg" alt="стрелка вниз"
-            /></a>
+            <a href="#">
+              <img src="img/icons/arrow-down.svg" alt="стрелка вниз" />
+            </a>
           </li>
           <li>
-            <a href="#"
-              ><img src="img/icons/arrow-up.svg" alt="стрелка вверх"
-            /></a>
+            <a href="#">
+              <img src="img/icons/arrow-up.svg" alt="стрелка вверх" />
+            </a>
           </li>
         </ul>
       </section>
@@ -117,51 +138,51 @@
         <ul>
           <li>
             <img src="img/products/preview-sedona.png" alt="Sedona" />
-            <h3><a href="#">Sedona</a></h3>
+            <h3 class="sub-title"><a href="#">Sedona</a></h3>
             <p>Информационный сайт для туристов</p>
-            <button type="submit">9 900 ₽</button>
+            <button class="button" type="submit">9 900 ₽</button>
           </li>
 
           <li>
             <img src="img/products/preview-pink.png" alt="Pink App" />
-            <h3><a href="#">Pink App</a></h3>
+            <h3 class="sub-title"><a href="#">Pink App</a></h3>
             <p>Продуктовый лендинг приложения для iOS и Android</p>
-            <button type="submit">9 900 ₽</button>
+            <button class="button" type="submit">9 900 ₽</button>
           </li>
 
           <li>
             <img src="img/products/preview-barbershop.png" alt="Barbershop" />
-            <h3><a href="#">Barbershop</a></h3>
+            <h3 class="sub-title"><a href="#">Barbershop</a></h3>
             <p>Сайт салона красоты. Для мужчин, да.</p>
-            <button type="submit">9 900 ₽</button>
+            <button class="button" type="submit">9 900 ₽</button>
           </li>
 
           <li>
             <img src="img/products/preview-mishka.png" alt="MISHKA" />
-            <h3><a href="#">MISHKA</a></h3>
+            <h3 class="sub-title"><a href="#">MISHKA</a></h3>
             <p>Интернет-магазин вязаных игрушек</p>
-            <button type="submit">9 900 ₽</button>
+            <button class="button" type="submit">9 900 ₽</button>
           </li>
 
           <li>
             <img src="img/products/preview-aplus.png" alt="A Plus" />
-            <h3><a href="#">A Plus</a></h3>
+            <h3 class="sub-title"><a href="#">A Plus</a></h3>
             <p>Лендинг курсов повышения квалификации</p>
-            <button type="submit">9 900 ₽</button>
+            <button class="button" type="submit">9 900 ₽</button>
           </li>
 
           <li>
             <img src="img/products/preview-kvast.png" alt="КВАСТ" />
-            <h3><a href="#">КВАСТ</a></h3>
+            <h3 class="sub-title"><a href="#">КВАСТ</a></h3>
             <p>Промо-сайт производителя крафтового кваса</p>
-            <button type="submit">9 900 ₽</button>
+            <button class="button" type="submit">9 900 ₽</button>
           </li>
         </ul>
         <ul>
-          <li><a>1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">Следующая</a></li>
+          <li><a class="button-grey">1</a></li>
+          <li><a class="button-grey" href="#">2</a></li>
+          <li><a class="button-grey" href="#">3</a></li>
+          <li><a class="button-grey" href="#">Следующая</a></li>
         </ul>
       </section>
     </main>
@@ -184,7 +205,7 @@
           <li><img src="img/fb-icon.png" alt="" /></li>
           <li><img src="img/insta-icon.png" alt="" /></li>
         </ul>
-        <p>Давайте дружить, это выгодно!</p>
+        <p class="footer-social-slogan">Давайте дружить, это выгодно!</p>
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </section>
     </footer>

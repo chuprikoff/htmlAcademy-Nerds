@@ -38,11 +38,14 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
+
 a {
 	text-decoration: none;
 	cursor: pointer;
 	display: inline-block;
+	color: inherit;
 }
 
 body {
@@ -53,11 +56,20 @@ body {
 	line-height: 24px;
 }
 
+.main-header-logo:hover{
+opacity: 0.7;}
+
+fieldset {
+	padding: 0;
+	border: 0;
+}
+
 .display-none {
 	display: none;
 }
 
-.main-header {
+.main-header,
+.sub-header {
 	background: var(--background-special);
 }
 
@@ -69,10 +81,28 @@ body {
 	color: var(--default-black);
 	font-weight: 500;
 	line-height: 30px;
+  border-bottom: solid 2px rgba(251, 86, 90, 0);
+}
+.site-nav-item:hover{
+  color: var(--basic-accent);
+}
+.site-nav-item--action{
+  border-bottom: solid 2px var(--basic-accent);
 }
 
-.slider {
-	background: var(--background-special);
+.title {
+	font-weight: 500;
+	font-size: 55px;
+	line-height: 55px;
+	color: var(--default-black);
+}
+
+.sub-title {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 30px;
+	color: var(--default-black);
 }
 
 .slider-item h2 {
@@ -91,9 +121,27 @@ body {
 	font-weight: 500;
 	line-height: 18px;
 	border-radius: 3px;
+	border: none;
 }
 .button:hover {
 	background: var(--hover-accent);
+}
+
+.button-grey {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 18px;
+	text-align: center;
+	border: none;
+	background: var(--background-special);
+	color: var(--default-black);
+}
+.button-grey:hover {
+	background: var(--hover-form-btn);
+}
+
+.sort-select{
+  color: var(--default-black);
 }
 
 .services-item-title {
@@ -102,6 +150,12 @@ body {
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 30px;
+}
+
+.price-value {
+	text-align: center;
+	border: none;
+	background: var(--background-special);
 }
 
 .button-yellow {
